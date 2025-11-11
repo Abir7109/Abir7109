@@ -61,10 +61,24 @@
 </a>
 
 ## 👾 Pacman On Contributions
-<img alt="pacman contribution graph" src="assets/snake-pacman.png" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abir7109/Abir7109/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abir7109/Abir7109/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Abir7109/Abir7109/output/pacman-contribution-graph.svg">
+</picture>
+
+<!-- Fallback image if the SVG hasn't generated yet -->
+<img alt="pacman fallback" src="assets/snake-pacman.png" />
 
 ## 🐍 Snake On Contributions
-<img alt="github-snake" src="assets/snake-pacman.png" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abir7109/Abir7109/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abir7109/Abir7109/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/Abir7109/Abir7109/output/github-snake.svg" />
+</picture>
+
+<!-- Fallback image if the SVG hasn't generated yet -->
+<img alt="snake fallback" src="assets/snake-pacman.png" />
 
 ---
 <!-- Note: Your WhatsApp number will be public in this README. Consider using a message button if you want to hide the number. -->
