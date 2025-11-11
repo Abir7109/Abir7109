@@ -17,6 +17,8 @@ jobs:
 
       - name: Generate Pacman SVGs
         uses: devxb/pacman-contribution@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           github_username: "Abir7109"
           svg_out_path: "dist/pacman-contribution-graph.svg"
