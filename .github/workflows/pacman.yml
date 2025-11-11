@@ -1,0 +1,26 @@
+name: Generate Pacman
+on:
+  schedule:
+    - cron: "0 0 * * *"   # daily at 00:00 UTC
+  workflow_dispatch:
+
+jobs:
+  pacman:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate Pacman SVGs
+        uses: devxb/pacman-contribution@v2
+        with:
+          github_username: "Abir7109"
+          svg_out_path: "dist/pacman-contribution-graph.svg"
+          svg_out_path_dark: "dist/pacman-contribution-graph-dark.svg"
+
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
