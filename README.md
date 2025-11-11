@@ -9,6 +9,12 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://rmabir71.vercel.app">
+    <img src="https://img.shields.io/badge/Portfolio-rmabir71.vercel.app-1abc9c?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+  </a>
+</p>
+
 <div align="center">
   <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXJ3bXBxYzN2dnIxeWRzNzNscHgyMm9jbmRqZDhiMThuYnhpc3d6aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WtTnAfZn6aVJfBzlN3/giphy.gif" alt="coding" width="600" />
 </div>
@@ -19,7 +25,7 @@
 - 🔭 Building production‑ready MERN apps and contributing to open source  
 - 🌍 Portfolio: <a href="https://rmabir71.vercel.app" target="_blank">rmabir71.vercel.app</a>  
 - 💬 Ask me about JavaScript, React, Next.js, Node.js, Express, MongoDB, TailwindCSS, Redux Toolkit  
-- 📫 Reach me on WhatsApp: <a href="https://wa.me/8801919069898">+8801919069898</a>  
+- 📫 Reach me on WhatsApp: <a href="https://wa.me/8801919069898">Message me on WhatsApp</a>  
 - ⚡ Fun fact: Console.table first; profiler and memoization next 😄
 
 # 🌐 Socials
