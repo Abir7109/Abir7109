@@ -1,4 +1,4 @@
-name: Generate Pacman
+name: Generate 3D Contribution Graph
 on:
   push:
     branches: [ main ]
@@ -10,10 +10,10 @@ permissions:
   contents: write
 
 jobs:
-  pacman:
+  profile-3d:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main (just for workflow context)
+      - name: Checkout main (context)
         uses: actions/checkout@v4
 
       - name: Checkout output branch
@@ -22,19 +22,16 @@ jobs:
           ref: output
           path: out
 
-      - name: Generate Pacman SVGs
-        uses: devxb/pacman-contribution@v2
+      - name: Generate 3D Contribution images
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          github_username: "Abir7109"
-          svg_out_path: "dist/pacman-contribution-graph.svg"
-          svg_out_path_dark: "dist/pacman-contribution-graph-dark.svg"
+          USERNAME: Abir7109
 
-      - name: Merge Pacman SVGs into output folder
+      - name: Merge 3D images into output folder
         run: |
-          mkdir -p out
-          cp -f dist/pacman-contribution-graph*.svg out/ || true
+          mkdir -p out/profile-3d-contrib
+          cp -rf profile-3d-contrib/* out/profile-3d-contrib/ || true
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4
