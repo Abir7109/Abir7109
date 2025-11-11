@@ -13,7 +13,14 @@ jobs:
   pacman:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout main (just for workflow context)
+        uses: actions/checkout@v4
+
+      - name: Checkout output branch
+        uses: actions/checkout@v4
+        with:
+          ref: output
+          path: out
 
       - name: Generate Pacman SVGs
         uses: devxb/pacman-contribution@v2
@@ -24,10 +31,16 @@ jobs:
           svg_out_path: "dist/pacman-contribution-graph.svg"
           svg_out_path_dark: "dist/pacman-contribution-graph-dark.svg"
 
+      - name: Merge Pacman SVGs into output folder
+        run: |
+          mkdir -p out
+          cp -f dist/pacman-contribution-graph*.svg out/ || true
+
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
-          build_dir: dist
+          build_dir: out
+          keep_history: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

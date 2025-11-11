@@ -13,7 +13,14 @@ jobs:
   snake:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout main (just for workflow context)
+        uses: actions/checkout@v4
+
+      - name: Checkout output branch
+        uses: actions/checkout@v4
+        with:
+          ref: output
+          path: out
 
       - name: Build snake SVGs
         uses: Platane/snk@v3
@@ -23,10 +30,16 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
+      - name: Merge Snake SVGs into output folder
+        run: |
+          mkdir -p out
+          cp -f dist/github-snake*.svg out/ || true
+
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
-          build_dir: dist
+          build_dir: out
+          keep_history: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
