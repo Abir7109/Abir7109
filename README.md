@@ -1,7 +1,6 @@
 <h1 align="center">Hi 👋, I'm Rahikul Makhtum Abir</h1>
 <h3 align="center">MERN Stack Developer · Crafting High‑Performance Web Apps · Open to Collaborations · Mentor</h3>
 
-<img align="right" src="https://i.postimg.cc/Jhz0gKHZ/abir2.jpg" alt="Rahikul Makhtum Abir" width="220" />
 
 <p align="center">
   <a href="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&center=true&vCenter=true&width=720&lines=MERN+Stack+Developer;JavaScript+%7C+React+%7C+Next.js;Node.js+%7C+Express+%7C+MongoDB;Performance-first+%26+Clean+Architecture;Open+Source+Contributor">
@@ -62,18 +61,10 @@
 </a>
 
 ## 👾 Pacman On Contributions
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abir7109/Abir7109/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abir7109/Abir7109/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Abir7109/Abir7109/output/pacman-contribution-graph.svg">
-</picture>
+<img alt="pacman contribution graph" src="assets/snake-pacman.png" />
 
 ## 🐍 Snake On Contributions
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abir7109/Abir7109/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abir7109/Abir7109/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/Abir7109/Abir7109/output/github-snake.svg" />
-</picture>
+<img alt="github-snake" src="assets/snake-pacman.png" />
 
 ---
 <!-- Note: Your WhatsApp number will be public in this README. Consider using a message button if you want to hide the number. -->
